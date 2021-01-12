@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative" :class="small ? null : 'shadow-xl'">
     <form
       class="w-full rounded-full"
       @submit.prevent
