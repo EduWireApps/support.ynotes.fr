@@ -1,6 +1,10 @@
 <template>
   <div class="relative">
-    <form class="w-full bg-white rounded-full" @submit.prevent>
+    <form
+      class="w-full rounded-full"
+      @submit.prevent
+      :class="small ? 'bg-gray-100' : 'bg-white'"
+    >
       <div class="flex items-center py-2">
         <input
           v-model="searchQuery"
@@ -45,7 +49,7 @@
         class="absolute z-10 mt-2 rounded-md shadow-lg left-0 right-0"
         v-if="elements.length"
       >
-        <div class="bg-gray-100 rounded-md shadow-xs">
+        <div class="bg-gray-50 rounded-md shadow-xs">
           <div
             class="py-1 divide-y-2 divide-gray-200"
             role="menu"
@@ -65,10 +69,16 @@
               "
               role="menuitem"
             >
-              <div class="text-gray-800 text-xl font-semibold">
+              <div
+                class="text-gray-800 font-semibold"
+                :class="small ? 'text-lg' : 'text-xl'"
+              >
                 {{ element.title }}
               </div>
-              <div class="text-lg whitespace-normal text-justify">
+              <div
+                class=" whitespace-normal text-justify"
+                :class="small ? null : 'text-lg'"
+              >
                 {{ element.description }}
               </div>
             </component>
@@ -81,6 +91,12 @@
 
 <script>
 export default {
+  props: {
+    small: {
+      type: Boolean,
+      default: false
+    }
+  },
   data() {
     return {
       searchQuery: "",
@@ -106,6 +122,10 @@ export default {
           description: "Essayez autre chose"
         });
       }
+    },
+    $route(to, from) {
+      this.elements = [];
+      this.searchQuery = "";
     }
   }
 };

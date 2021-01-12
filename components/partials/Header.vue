@@ -1,24 +1,16 @@
 <template>
   <header>
     <div
-      class="fixed top-0 left-0 z-50 flex items-center w-screen h-16 transition-colors sm:shadow-2xl bg-white"
+      class="fixed top-0 left-0 z-50 flex items-center w-screen h-16 transition-colors bg-white sm:shadow-2xl"
       :class="open ? null : 'shadow-2xl'"
     >
       <Container class="flex items-center justify-between">
-        <nuxt-link
-          to="/"
-          class="flex items-center space-x-3 focus:outline-none"
-        >
+        <nuxt-link to="/" class="flex items-center focus:outline-none">
           <img
             src="~/assets/images/logoBlue.png"
             class="w-8 h-8 rounded-lg"
             alt="Logo"
           />
-          <div
-            class="text-3xl font-base text-space-700 uppercase tracking-tight"
-          >
-            Centre d'aide
-          </div>
         </nuxt-link>
         <button
           @click="open = !open"
@@ -49,8 +41,7 @@
           </svg>
         </button>
         <div class="items-center hidden space-x-2 sm:flex">
-          <input type="text" name="" id="" placeholder="Search" class="border hidden md:block">
-          <HeaderButton link="/">Accueil</HeaderButton>
+          <SearchBar class="w-64" small v-if="$route.path !== '/'" />
           <HeaderButton link="https://ynotes.fr" external
             >ynotes.fr</HeaderButton
           >
@@ -84,12 +75,11 @@
       leave-to-class="transform scale-95 opacity-0"
     >
       <div
-        class="fixed left-0 w-full shadow-2xl sm:hidden top-16 z-40 bg-white"
+        class="fixed left-0 z-40 w-full bg-white shadow-2xl sm:hidden top-16"
         v-show="open"
       >
         <div class="px-2 pt-2 pb-3 space-y-1">
-          <input type="text" name="" id="" placeholder="Search" class="border">
-          <HeaderButton link="/">Accueil</HeaderButton>
+          <SearchBar class="w-full" small v-if="$route.path !== '/'" />
           <HeaderButton link="https://ynotes.fr" external
             >ynotes.fr</HeaderButton
           >
