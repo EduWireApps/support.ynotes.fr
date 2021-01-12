@@ -1,0 +1,220 @@
+{
+  "hero": {
+    "cta": "Votre application scolaire connectée",
+    "keypoints": [
+      "Gérez vos notes, vos devoirs et même votre emploi du temps",
+      "Contrôlez votre contenu en toute sécurité",
+      "Accédez à vos notes dans une interface élégante"
+    ],
+    "download": "Téléchargez-la dès maintenant !"
+  },
+  "warning": {
+    "title": "Avertissement",
+    "text": "yNotes est un client open-source <i>non-officiel</i> actuellement compatible avec les services <strong>EcoleDirecte</strong> et <strong>Pronote</strong> qui sont deux produits déposés. Nous sommes en train d'implémenter les différentes fonctionnalités déjà mises à disposition par ces services. Cependant, des modifications peuvent avoir lieu suite à une décision des services officiels."
+  },
+  "features": [
+    {
+      "title": "Toutes les fonctionnalités de base...",
+      "keypoints": [
+        "Vos notes",
+        "Votre messagerie",
+        "Votre agenda",
+        "Vos devoirs"
+      ],
+      "imgPath": "images/phoneScreen.png",
+      "imgLeft": false
+    },
+    {
+      "title": "...et bien plus encore !",
+      "imgPath": "images/phoneScreen.png",
+      "imgLeft": true,
+      "text": "yNotes apporte un grand nombre de fonctionnalités très pratiques !"
+    },
+    {
+      "title": "SpaceStats : statistiques avancées",
+      "keypoints": [
+        "Evolution des notes sur le trimestre",
+        "Impact d'une note sur la moyenne de la matière concernée et la moyenne générale",
+        "Et bien d'autres à venir..."
+      ],
+      "imgPath": "images/phoneScreen.png",
+      "imgLeft": false,
+      "textBefore": true,
+      "text": "Les gestionnaires de vie scolaire proposent bien quelques statistiques... mais c'est loin d'être suffisant. yNotes palie ce manque en vous proposant de superbes stats !",
+      "status": {
+        "variant": "warning",
+        "text": "En cours"
+      }
+    },
+    {
+      "title": "Un agenda amélioré",
+      "keypoints": [
+        "Ajoutez un évènement sur le temps scolaire",
+        "Organisez votre temps extrascolaire sans passer par d'autres applications"
+      ],
+      "imgPath": "images/phoneScreen.png",
+      "imgLeft": true,
+      "textBefore": true,
+      "text": "En plus de l'agenda fourni par les services, yNotes rajoute des fonctionnalités très pratique !",
+      "status": {
+        "variant": "warning",
+        "text": "En cours"
+      }
+    },
+    {
+      "title": "Soyez notifiez en (quasi) temps réel",
+      "keypoints": [
+        "Notification de nouvelle note",
+        "Notification de nouvel email"
+      ],
+      "imgPath": "images/phoneScreen.png",
+      "imgLeft": false,
+      "textBefore": true,
+      "status": {
+        "variant": "warning",
+        "text": "En cours"
+      },
+      "text": "Vous aimeriez être au courant lorsqu'une nouvelle note est disponible ? C'est désormais possible, et ce n'est pas tout !"
+    },
+    {
+      "title": "Gestionnaire de fichiers amélioré",
+      "keypoints": [
+        "Téléchargez votre document une seule fois",
+        "Organisez vos documents dans des dossiers",
+        "Renommez vos fichiers",
+        "Supprimez-les"
+      ],
+      "imgPath": "images/phoneScreen.png",
+      "imgLeft": true,
+      "textBefore": true,
+      "status": {
+        "variant": "warning",
+        "text": "En cours"
+      },
+      "text": "Télécharger des documents, c'est bien. Savoir où ils sont enregistrés et pouvoir les modifier depuis l'application, c'est mieux."
+    }
+  ],
+  "project": {
+    "title": "Le projet",
+    "items": [
+      {
+        "title": "L'objectif",
+        "content": "Débuté en 2019, yNotes a pour objectif de fournir une alternative puissante aux applications mobiles des gestionnaires de vie scolaire tels qu'EcoleDirecte et Pronote, dont les fonctionnalités sont limitées. Les utilisateurs doivent donc retrouver l'environnement proposé par ces services, mais aussi de nouvelles fonctionnalités pratiques et utiles.",
+        "imgPath": "images/bag.png"
+      },
+      {
+        "title": "Une application moderne et élégante",
+        "content": "yNotes est développé avec le nouveau framework Flutter de Google : plus rapide, plus léger et plus efficace, il permet de réaliser de belles interfaces en Dart.",
+        "imgPath": "images/hashtag.png"
+      },
+      {
+        "title": "Open-source",
+        "content": "En tant que projet open-source, tout le monde (vous peut-être) peut proposer des modifications, mais également constater la façon dont vos données sont respectueusement traitées. Elles ne sont pas collectées mais stockées localement. Le code source est disponible sur Github.",
+        "imgPath": "images/dove.png"
+      }
+    ]
+  },
+  "howitworks": {
+    "title": "Comment ça marche ?",
+    "steps": [
+      {
+        "svg": "login",
+        "title": "Etape 1",
+        "content": "Vous vous connectez avec vos identifiants scolaires (EcoleDirecte ou Pronote) qui sont conservés localement."
+      },
+      {
+        "svg": "cog",
+        "title": "Etape 2",
+        "content": "Nous utilisons les APIs des services pour accéder à vos notes."
+      },
+      {
+        "svg": "cloud-download",
+        "title": "Etape 3",
+        "content": "Nous récupérons vos données scolaires (toujours localement) et vous y accédez librement."
+      },
+      {
+        "svg": "tick",
+        "title": "Prêt !",
+        "content": "Vous accédez à vos données et profitez des fonctionnalités de yNotes !"
+      }
+    ]
+  },
+  "datapolicy": {
+    "title": "Nous n'exploitons pas vos données",
+    "steps": [
+      {
+        "svg": "folder",
+        "title": "Stockage",
+        "content": "Vos données sont et restent stockées localement sur votre appareil."
+      },
+      {
+        "svg": "cloud-upload",
+        "title": "Collecte",
+        "content": "Les services que nous utilisons ne collectent pas vos données."
+      },
+      {
+        "svg": "currency-dollar",
+        "title": "Vente",
+        "content": "Pas de cookies, de publicités, d'espionnage ou de vente de quoi que ce soit vous concernant. Ce qui est à vous reste à vous."
+      },
+      {
+        "svg": "question-mark-circle",
+        "title": "Toujours pas convaincu ?",
+        "content": "Un doute concernant l'utilisation de vos données ? Rendez-vous sur Github pour consulter le code source."
+      }
+    ]
+  },
+  "contributors": {
+    "title": "Contributeurs",
+    "content": "Un grand merci à tous les contributeurs de ce projet, à quelque échelle que ce soit.",
+    "fetch": {
+      "excludedUsers": [
+        "ModernChocolate",
+        "allcontributors[bot]",
+        "NerofleLincoln",
+        "florian-lefebvre"
+      ],
+      "customUsers": [
+        {
+          "login": "ModernChocolate (JsonLines)",
+          "html_url": "https://github.com/ModernChocolate",
+          "avatar_url": "https://avatars1.githubusercontent.com/u/45465075?v=4",
+          "app": true,
+          "website": true,
+          "customSentence": "Initiateur du projet"
+        },
+        {
+          "login": "florian-lefebvre",
+          "html_url": "https://github.com/florian-lefebvre",
+          "avatar_url": "https://avatars1.githubusercontent.com/u/69633530?v=4",
+          "app": true,
+          "website": true,
+          "customSentence": ""
+        }
+      ]
+    }
+  },
+  "recruitement": {
+    "title": "Nous avons besoin de vous !",
+    "content": "Pour mener à bien ce projet, nous avons besoin de vous et de vos compétences !",
+    "keypoints": ["Des développeurs", "Des graphistes"]
+  },
+  "contact": {
+    "title": "Question, problème ou autre ?",
+    "content": "Pas de panique ! Nous avons tout ce qu'il vous faut",
+    "links": [
+      {
+        "text": "FAQ",
+        "url": "/faq"
+      },
+      {
+        "text": "Centre d'aide",
+        "url": "https://support.ynotes.fr"
+      },
+      {
+        "text": "Contactez-nous",
+        "url": "/contact"
+      }
+    ]
+  }
+}
