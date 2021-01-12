@@ -17,4 +17,7 @@ body {
   scroll-behavior: smooth;
   scroll-margin-top: 4rem;
 }
+.error svg {
+  @apply inline;
+}
 </style>
