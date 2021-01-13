@@ -2,7 +2,7 @@
   <Container class="py-12 sm:max-w-3xl md:max-w-4xl lg:max-w-6xl">
     <nuxt-link
       to="/"
-      class="inline-flex items-center px-3 py-1 mb-5 text-base font-medium font-semibold text-white transition transition-colors duration-150 ease-in-out rounded-md focus:outline-none bg-space-400 hover:bg-space-300"
+      class="inline-flex items-center px-3 py-1 mb-5 text-base font-semibold text-white transition duration-150 ease-in-out rounded-md focus:outline-none bg-space-400 hover:bg-space-300"
       ><svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -32,6 +32,18 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: this.el.title,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.el.description
+        }
+      ]
+    };
+  },
   async asyncData({ $content, params }) {
     const el = await $content(params.slug).fetch();
     return { el };

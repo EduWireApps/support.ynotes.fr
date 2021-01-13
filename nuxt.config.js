@@ -7,11 +7,17 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: "ynotes-website-support",
+    title: "Accueil",
+    titleTemplate: "%s | Centre d'aide yNotes",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Le centre d'aide yNotes est là pour vous aider à régler les problèmes rencontrés durant l'utilisation de l'application."
+      }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
