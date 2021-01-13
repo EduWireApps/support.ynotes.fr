@@ -9,6 +9,9 @@ export default {
   head: {
     title: "Accueil",
     titleTemplate: "%s | Centre d'aide yNotes",
+    htmlAttrs: {
+      lang: "fr"
+    },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },

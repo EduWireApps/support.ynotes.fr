@@ -22,6 +22,7 @@
         <a
           href="https://ynotes.fr/legal/PDCYNotes.pdf"
           target="_blank"
+          rel="noopener noreferrer"
           class="text-gray-500"
         >
           Politique de confidentialité
@@ -29,6 +30,7 @@
         <a
           href="https://ynotes.fr/legal/CGUYNotes.pdf"
           target="_blank"
+          rel="noopener noreferrer"
           class="ml-3 text-gray-500"
         >
           Conditions d'utilisation
