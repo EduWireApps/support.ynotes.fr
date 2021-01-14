@@ -3,10 +3,10 @@ title: Notifications
 description: Découvrez le fonctionnement et les problèmes récurrents liés aux notifications.
 ---
 
-## Comment fonctionnent les notifications ?
+## Comment fonctionnent les notifications ? 🤔
 Les notifications de nouvelles notes et de nouveaux mails fonctionnent sur un concept très simple : l'application sauvegarde le nombre actuel de notes et de mails et toutes les 15 minutes en arrière plan, elle vérifie si aucun n'a été ajouté. Il est impossible de réduire le temps d'actualisation des notifications. Sur iOS il se peut que ces actualisations soient moins courantes si vous n'utilisez que très peu l'application, cela est du aux exigences du système d'exploitation que nous ne pouvons contourner.
 
-## Je ne vois pas les notifications yNotes
+## Je ne vois pas les notifications yNotes ❗️
 
 Si vous ne voyez jamais les notifications de l'application ou seulement après l'avoir démarrée, il se pourrait que l'application ait besoin de configurations supplémentaires.
 
@@ -27,7 +27,7 @@ _Pour afficher les notifications de nouvelles notes/nouveaux mails, yNotes lance
 *   Trouvez yNotes (dans "Toutes les applications") et désactivez l'optimisation de batterie.
 *   Vérifiez qu'aucun autre paramètre ne peut interférer sur l'exécution correcte de yNotes.
 
-#### <u>Je ne vois aucune notification</u>
+#### <u>Je ne vois aucune notification</u> 
 
 *   Vérifiez que les notifications sont activées dans les paramètres de yNotes. Vous pouvez sélectionner **Notifications de nouveaux mails** ou **Notifications de nouvelles notes**
 *   Vérifiez que vous autorisez yNotes à envoyer des notifications dans les paramètres de votre appareil.
