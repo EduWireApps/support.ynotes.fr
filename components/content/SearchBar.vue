@@ -61,11 +61,13 @@
               :key="index"
               :to="element.path === '' ? null : element.path"
               :is="element.path === '' ? 'div' : 'nuxt-link'"
-              class="block px-4 py-2 text-sm leading-5 text-gray-700 truncate transition duration-150 ease-out focus:outline-none"
+              class="block px-4 py-2 text-sm text-gray-700 transition duration-150 ease-out focus:outline-none"
               :class="
-                element.path === ''
+                [element.path === ''
                   ? null
-                  : 'hover:bg-gray-200 hover:text-gray-900'
+                  : 'hover:bg-gray-200 hover:text-gray-900',
+                  small ? 'leading-none' : 'leading-5'
+                  ]
               "
               role="menuitem"
             >
