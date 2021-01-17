@@ -109,7 +109,7 @@ export default {
         this.elements = [];
         return;
       }
-      this.elements = await this.$content()
+      this.elements = await this.$content({ deep: true })
         .only(["title", "path", "description"])
         .sortBy("createdAt", "asc")
         .limit(6)

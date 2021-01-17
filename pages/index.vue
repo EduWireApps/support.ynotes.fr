@@ -42,7 +42,7 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const elements = await $content()
+    const elements = await $content({ deep: true })
       .only(["title", "path", "description"])
       .sortBy("createdAt", "asc")
       .fetch();
