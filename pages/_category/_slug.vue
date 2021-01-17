@@ -45,8 +45,8 @@ export default {
     };
   },
   async asyncData({ $content, params }) {
-    console.log(params)
-    const el = await $content(params.pathMatch).fetch();
+    console.log(params);
+    const el = await $content(params.category, params.slug).fetch();
     console.log(el);
     return { el };
   }

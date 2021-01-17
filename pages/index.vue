@@ -23,13 +23,13 @@
     </div>
     <Container class="py-12">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-        <div v-for="(el, index) in elements" :key="index">
+        <div v-for="(el, index) in content.categories" :key="index">
           <nuxt-link
-            :to="el.path"
+            :to="el.folder"
             class="block p-4 transition-all transform bg-white shadow rounded-2xl hover:shadow-xl hover:-translate-y-1 h-full"
           >
             <div class="text-2xl font-semibold text-gray-800 mb-3">
-              {{ el.title }}
+              {{ el.name }}
             </div>
             <div class="text-lg text-justify">{{ el.description }}</div>
           </nuxt-link>
@@ -40,14 +40,22 @@
 </template>
 
 <script>
+import content from "@/assets/content/content.json";
+
 export default {
-  async asyncData({ $content, params }) {
-    const elements = await $content({ deep: true })
-      .only(["title", "path", "description"])
-      .sortBy("createdAt", "asc")
-      .fetch();
-    return { elements };
-  }
+  data() {
+    return {
+      content: content
+    };
+  },
+  // async asyncData({ $content }) {
+  //   console.log(require("@/assets/content/content.json"))
+  //   const elements = await $content({ deep: true })
+  //     .only(["title", "path", "description"])
+  //     .sortBy("createdAt", "asc")
+  //     .fetch();
+  //   return { elements };
+  // }
 };
 </script>
 
