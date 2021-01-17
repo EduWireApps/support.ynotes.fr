@@ -1,5 +1,4 @@
 ---
-title: Connexion Ecole Directe
-description: lorem ipsum
+title: Se connecter avec son compte EcoleDirecte
+description: Mode d'emploi de la connexion à l'aide d'EcoleDirecte
 ---
-lorem ipsum ED
