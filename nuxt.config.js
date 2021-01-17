@@ -22,7 +22,14 @@ export default {
           "Le centre d'aide yNotes est là pour vous aider à régler les problèmes rencontrés durant l'utilisation de l'application."
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Asap&display=swap"
+      }
+    ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
