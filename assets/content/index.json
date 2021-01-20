@@ -3,5 +3,12 @@
   "cta": {
     "title": "Besoin d'aide ? Nous sommes là pour vous aider.",
     "content": "De votre compte à notre politique de confidentialté, vous trouverez toute l'aide dont vous avez besoin."
+  },
+  "contact": {
+      "content": "Vous n'avez pas trouvé ?",
+      "link": {
+          "text": "Contactez-nous",
+          "url": "https://ynotes.fr/contact"
+      }
   }
 }

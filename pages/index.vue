@@ -30,6 +30,18 @@
           class="mx-auto text-lg text-gray-700 sm:text-xl sm:max-w-xl xl:mt-4 xl:text-2xl xl:max-w-2xl"
           v-html="indexJson.cta.content"
         ></p>
+        <p
+          class="mx-auto text-lg text-gray-700 sm:text-xl sm:max-w-xl xl:mt-4 xl:max-w-2xl"
+        >
+          <span v-html="indexJson.contact.content"></span>
+          <a
+            :href="indexJson.contact.link.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            v-html="indexJson.contact.link.text"
+            class="text-space-300 hover:text-space-400"
+          ></a>
+        </p>
       </div>
       <div class="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
         <div v-for="(el, index) in content.categories" :key="index">
