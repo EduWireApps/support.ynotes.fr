@@ -62,20 +62,21 @@
               :to="element.path === '' ? null : element.path"
               :is="element.path === '' ? 'div' : 'nuxt-link'"
               class="block px-4 py-2 text-sm text-gray-700 transition duration-150 ease-out focus:outline-none"
-              :class="
-                [element.path === ''
+              :class="[
+                element.path === ''
                   ? null
                   : 'hover:bg-gray-200 hover:text-gray-900',
-                  small ? 'leading-none' : 'leading-5'
-                  ]
-              "
+                small ? 'leading-none' : 'leading-5'
+              ]"
               role="menuitem"
             >
               <div
                 class="text-gray-800 font-semibold"
                 :class="small ? 'text-lg' : 'text-xl'"
               >
-                {{ element.title }}
+                <span class="text-gray-500 font-base text-base"
+                  >{{ element.dir }} / </span
+                >{{ element.title }}
               </div>
               <div
                 class=" whitespace-normal text-justify"
@@ -107,12 +108,13 @@ export default {
   },
   watch: {
     async searchQuery(searchQuery) {
+      let content = require("@/assets/content/content.json");
       if (!searchQuery) {
         this.elements = [];
         return;
       }
       this.elements = await this.$content({ deep: true })
-        .only(["title", "path", "description"])
+        .only(["title", "path", "description", "dir"])
         .sortBy("createdAt", "asc")
         .limit(6)
         .search(searchQuery)
@@ -124,6 +126,10 @@ export default {
           description: "Essayez autre chose"
         });
       }
+      this.elements.forEach(e => {
+        let c = content.categories.find(c => c.folder == e.dir.substring(1));
+        e.dir = c.name;
+      });
     },
     $route(to, from) {
       this.elements = [];

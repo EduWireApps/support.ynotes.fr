@@ -14,21 +14,30 @@
       </div> -->
       <div class="z-10 max-w-full px-4 w-224">
         <h1
-          class="mb-4 text-3xl font-bold text-center text-white sm:text-4xl lg:text-6xl md:mb-8 xyz-nested "
-        >
-          Centre d'aide
-        </h1>
+          class="mb-4 text-3xl font-bold text-center text-white sm:text-4xl lg:text-6xl md:mb-8 xyz-nested"
+          v-html="indexJson.title"
+        ></h1>
         <SearchBar />
       </div>
     </div>
     <Container class="py-12">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+      <div class="py-8 text-center">
+        <h2
+          class="mb-3 text-3xl font-semibold font-display sm:text-4xl xl:text-5xl"
+          v-html="indexJson.cta.title"
+        ></h2>
+        <p
+          class="mx-auto text-lg text-gray-700 sm:text-xl sm:max-w-xl xl:mt-4 xl:text-2xl xl:max-w-2xl"
+          v-html="indexJson.cta.content"
+        ></p>
+      </div>
+      <div class="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
         <div v-for="(el, index) in content.categories" :key="index">
           <nuxt-link
             :to="el.folder"
-            class="block p-4 transition-all transform bg-white shadow rounded-2xl hover:shadow-xl hover:-translate-y-1 h-full"
+            class="block h-full p-4 transition-all transform bg-white shadow rounded-2xl hover:shadow-xl hover:-translate-y-1"
           >
-            <div class="text-2xl font-semibold text-gray-800 mb-3">
+            <div class="mb-3 text-2xl font-semibold text-gray-800">
               {{ el.name }}
             </div>
             <div class="text-lg text-justify">{{ el.description }}</div>
@@ -40,22 +49,16 @@
 </template>
 
 <script>
+import indexJson from "@/assets/content/index.json";
 import content from "@/assets/content/content.json";
 
 export default {
   data() {
     return {
-      content: content
+      content: content,
+      indexJson: indexJson
     };
-  },
-  // async asyncData({ $content }) {
-  //   console.log(require("@/assets/content/content.json"))
-  //   const elements = await $content({ deep: true })
-  //     .only(["title", "path", "description"])
-  //     .sortBy("createdAt", "asc")
-  //     .fetch();
-  //   return { elements };
-  // }
+  }
 };
 </script>
 

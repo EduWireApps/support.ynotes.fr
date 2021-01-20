@@ -1,7 +1,7 @@
 <template>
   <Container class="py-12 sm:max-w-3xl md:max-w-4xl lg:max-w-6xl">
     <nuxt-link
-      to="/"
+      :to="url"
       class="inline-flex items-center px-3 py-1 mb-5 text-base font-semibold text-white transition duration-150 ease-in-out rounded-md focus:outline-none bg-space-400 hover:bg-space-300"
       ><svg
         xmlns="http://www.w3.org/2000/svg"
@@ -45,10 +45,9 @@ export default {
     };
   },
   async asyncData({ $content, params }) {
-    console.log(params);
-    const el = await $content(params.category, params.slug).fetch();
-    console.log(el);
-    return { el };
+    const el = await $content(params.category, params.slug).fetch(),
+      url = "/" + params.category;
+    return { el, url };
   }
 };
 </script>
