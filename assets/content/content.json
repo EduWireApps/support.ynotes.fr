@@ -1,23 +1,24 @@
 {
-    "categories": [{
-        "name": "Compte",
-        "folder": "compte",
-        "description": "lorem ipsum"
-    },
-    {
-        "name": "Fonctionnalités",
-        "folder": "fonctionnalites",
-        "description": "lorem ipsum"
-    },
-    {
-        "name": "Divers",
-        "folder": "divers",
-        "description": "lorem ipsum"
-    },
-    {
-        "name": "Confidentialité",
-        "folder": "confidentialite",
-        "description": "lorem ipsum"
-    }
-]
+    "categories": [
+        {
+            "name": "Compte",
+            "folder": "compte",
+            "description": "Apprenez comment vous connecter à yNotes."
+        },
+        {
+            "name": "Fonctionnalités",
+            "folder": "fonctionnalites",
+            "description": "Découvrez les fonctionnalités utiles de yNotes."
+        },
+        {
+            "name": "Divers",
+            "folder": "divers",
+            "description": "D'autres informations utiles mais tout aussi importantes."
+        },
+        {
+            "name": "Confidentialité et sécurité",
+            "folder": "confidentialite-securite",
+            "description": "Vos données sont importantes que votre sécurité."
+        }
+    ]
 }
