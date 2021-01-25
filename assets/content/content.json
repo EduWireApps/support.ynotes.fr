@@ -2,22 +2,22 @@
     "categories": [{
         "name": "Compte",
         "folder": "compte",
-        "description": "lorem ipsum"
+        "description": "Apprenez comment vous connecter à votre compte EcoleDirecte ou Pronote."
     },
     {
         "name": "Fonctionnalités",
         "folder": "fonctionnalites",
-        "description": "lorem ipsum"
+        "description": "Vous voulez en savoir plus concernant les fonctionnalités que propose yNotes ? Vous êtes au bon endroit !"
     },
     {
-        "name": "Divers",
-        "folder": "divers",
-        "description": "lorem ipsum"
+        "name": "Problèmes",
+        "folder": "problemes",
+        "description": "Vous rencontrez des difficultés ou des erreurs ? Toutes les informations sont ici."
     },
     {
         "name": "Confidentialité",
         "folder": "confidentialite",
-        "description": "lorem ipsum"
+        "description": "Vos données sont et restent à vous, découvrez comment."
     }
 ]
 }

@@ -1,8 +1,27 @@
 <template>
   <Container class="py-12">
+    <nuxt-link
+      to="/"
+      class="inline-flex items-center px-3 py-1 mb-5 text-base font-semibold text-white transition duration-150 ease-in-out rounded-md focus:outline-none bg-space-400 hover:bg-space-300"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        class="w-4 h-4 mr-2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M10 19l-7-7m0 0l7-7m-7 7h18"
+        />
+      </svg>
+      Retour
+    </nuxt-link>
     <div class="text-center mb-10">
-      <h1>{{ category.name }}</h1>
-      <p>{{ category.description }}</p>
+      <h1 class="text-5xl leading-8 font-extrabold tracking-tight text-gray-900 lg:text-6xl mb-4">{{ category.name }}</h1>
+      <p class="max-w-3xl text-xl text-gray-500 lg:mx-auto">{{ category.description }}</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
       <div v-for="(el, index) in articles" :key="index">
