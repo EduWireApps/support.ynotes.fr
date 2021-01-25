@@ -2,10 +2,10 @@
   "title": "Centre d'aide",
   "cta": {
     "title": "Besoin d'aide ? Nous sommes là pour vous aider.",
-    "content": "De votre compte à notre politique de confidentialté, vous trouverez toute l'aide dont vous avez besoin."
+    "content": "De votre compte à notre politique de confidentialité, vous trouverez ici toute l'aide dont vous avez besoin."
   },
   "contact": {
-      "content": "Vous n'avez pas trouvé ?",
+      "content": "Votre problème ne figure pas ici ? Vous souhaitez en savoir plus sur une fonctionnalité ?",
       "link": {
           "text": "Contactez-nous",
           "url": "https://ynotes.fr/contact"

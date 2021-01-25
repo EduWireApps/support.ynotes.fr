@@ -1,23 +1,24 @@
 {
-    "categories": [{
-        "name": "Compte",
-        "folder": "compte",
-        "description": "Apprenez comment vous connecter à votre compte EcoleDirecte ou Pronote."
-    },
-    {
-        "name": "Fonctionnalités",
-        "folder": "fonctionnalites",
-        "description": "Vous voulez en savoir plus concernant les fonctionnalités que propose yNotes ? Vous êtes au bon endroit !"
-    },
-    {
-        "name": "Problèmes",
-        "folder": "problemes",
-        "description": "Vous rencontrez des difficultés ou des erreurs ? Toutes les informations sont ici."
-    },
-    {
-        "name": "Confidentialité",
-        "folder": "confidentialite",
-        "description": "Vos données sont et restent à vous, découvrez comment."
-    }
-]
+    "categories": [
+        {
+            "name": "Compte",
+            "folder": "compte",
+            "description": "Apprenez comment vous connecter à yNotes."
+        },
+        {
+            "name": "Fonctionnalités",
+            "folder": "fonctionnalites",
+            "description": "Découvrez les fonctionnalités utiles de yNotes."
+        },
+        {
+            "name": "Divers",
+            "folder": "divers",
+            "description": "D'autres informations utiles mais tout aussi importantes."
+        },
+        {
+            "name": "Confidentialité et sécurité",
+            "folder": "confidentialite-securite",
+            "description": "Vos données sont importantes que votre sécurité."
+        }
+    ]
 }
