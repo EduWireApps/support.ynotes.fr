@@ -27,7 +27,8 @@ export default {
       { rel: "preconnect", href: "https://fonts.gstatic.com" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        href:
+          "https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
       }
     ]
   },
@@ -59,5 +60,16 @@ export default {
   content: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {}
+  build: {},
+
+  generate: {
+    fallback: "404.html",
+    async routes() {
+      const { $content } = require("@nuxt/content");
+      const files = await $content({ deep: true })
+        .only(["path"])
+        .fetch();
+      return files.map(file => (file.path === "/index" ? "/" : file.path));
+    }
+  }
 };

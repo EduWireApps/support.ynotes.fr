@@ -59,6 +59,7 @@ export default {
     const articles = await $content({ deep: true })
       .where({ dir: { $eq: "/" + category.folder } })
       .fetch();
+    console.log(articles)
     return {
       category,
       articles
