@@ -43,12 +43,12 @@
 export default {
   head() {
     return {
-      title: "CATEGORY",
+      title: this.category.name,
       meta: [
         {
           hid: "description",
           name: "description",
-          content: "DESCRIPTION"
+          content: this.category.description
         }
       ]
     };
