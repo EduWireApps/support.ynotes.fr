@@ -8,7 +8,7 @@
         <nuxt-link to="/" class="flex items-center focus:outline-none">
           <img
             src="~/assets/images/logoBlue.png"
-            class="w-8 h-8 rounded-lg"
+            class="w-8 h-8 rounded-xl"
             alt="Logo"
           />
         </nuxt-link>
@@ -46,7 +46,7 @@
             >ynotes.fr</HeaderButton
           >
           <HeaderButton
-            link="https://github.com/ModernChocolate/ynotes/issues/new"
+            :link="`${require('~/assets/content/contact.json').repo}/issues/new`"
             external
             button
             class="transition-colors"
@@ -84,7 +84,7 @@
             >ynotes.fr</HeaderButton
           >
           <HeaderButton
-            link="https://github.com/ModernChocolate/ynotes/issues/new"
+            :link="`${require('~/assets/content/contact.json').repo}/issues/new`"
             external
             button
             class="transition-colors"

@@ -21,5 +21,5 @@ Nous ne recevons aucune de vos données et aucune requête exterieure n'est jama
 
 ## Ne nous croyez pas sur parole 🕵️‍♂️
 
-Nous comprendrions parfaitement que vous soyez très soucieux de l'usage de vos données, ainsi je vous invite dès maintenant à regarder [cette recherche]("https://github.com/ModernChocolate/ynotes/search?q=http") sur le répertoire officiel de yNotes comprenant toutes les requêtes web effectuables par l'application. Vous pourriez peut-être y laisser une étoile pour supporter le projet ? 🙃
+Nous comprendrions parfaitement que vous soyez très soucieux de l'usage de vos données, ainsi je vous invite dès maintenant à regarder [cette recherche]("https://github.com/ynotesapp/ynotes/search?q=http") sur le répertoire officiel de yNotes comprenant toutes les requêtes web effectuables par l'application. Vous pourriez peut-être y laisser une étoile pour supporter le projet ? 🙃
 
