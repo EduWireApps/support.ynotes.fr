@@ -45,7 +45,8 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
+    "vue-plausible"
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -74,6 +75,11 @@ export default {
       return files
         .map(file => (file.path === "/index" ? "/" : file.path))
         .concat(folders);
+    }
+  },
+  publicRuntimeConfig: {
+    plausible: {
+      domain: "support.ynotes.fr",
     }
   }
 };
