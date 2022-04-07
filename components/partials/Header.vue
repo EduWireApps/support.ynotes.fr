@@ -1,7 +1,7 @@
 <template>
   <header>
     <div
-      class="fixed top-0 left-0 z-50 flex items-center w-screen h-16 transition-colors bg-white sm:shadow-2xl"
+      class="sticky top-0 z-50 flex items-center w-full h-16 transition-colors bg-white sm:shadow-2xl"
       :class="open ? null : 'shadow-2xl'"
     >
       <Container class="flex items-center justify-between">
@@ -46,7 +46,9 @@
             >ynotes.fr</HeaderButton
           >
           <HeaderButton
-            :link="`${require('~/assets/content/contact.json').repo}/issues/new`"
+            :link="
+              `${require('~/assets/content/contact.json').repo}/issues/new`
+            "
             external
             button
             class="transition-colors"
@@ -84,7 +86,9 @@
             >ynotes.fr</HeaderButton
           >
           <HeaderButton
-            :link="`${require('~/assets/content/contact.json').repo}/issues/new`"
+            :link="
+              `${require('~/assets/content/contact.json').repo}/issues/new`
+            "
             external
             button
             class="transition-colors"
